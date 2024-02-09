@@ -1,0 +1,371 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Inter', serif;
+    background-color: #1D2026;
+    /* background-image: url(./images/trianglify-lowres.png); */
+}
+
+/*Navigation*/
+/* #login {
+    background-color: #124575;
+    padding: 5px;
+    color: #F0ECE5;
+    border: solid 2px ;
+    border-radius: 5px;
+    font-weight: 500px;
+} */
+
+/* #login:hover {
+    background-color: #092641;
+    color: yellowgreen;
+    transition: 0.3s;
+} */
+.navbar {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 2px 0;
+    width: 100%;
+    height: fit-content;
+    position: fixed;
+}
+
+.container {
+    position: fixed;
+    background-color: #0F172A;
+    padding: 10px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 5px;
+    gap: 10px
+}
+
+.title h1 {
+    color: yellowgreen;
+    margin: 0;
+}
+
+#mmi-logo {
+    max-height: 70px;
+}
+
+nav {
+    padding-right: 60px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 5px;
+}
+
+nav ul a {
+    color: #55af31d0;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    font-weight: 600;
+    text-align: center;
+    /* line-height: 30px; */
+    height: fit-content;
+    font-size: larger;
+    margin: 0;
+    transition: 0.3s;
+}
+
+nav ul a:hover {
+    color: yellowgreen;
+}
+
+nav ul a:active {
+
+}
+/*Navigation*/
+
+/*Footer*/
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    left: 0;
+    bottom: 0;
+    width: 100%; 
+    height: 200px;
+    background-color: #0F172A;
+    /* position: fixed; */
+    margin-top: 200px;
+}
+
+.footer-container h2 {
+    text-transform: uppercase;
+    color: yellowgreen;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brands {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.brands a {
+    text-decoration: none;
+}
+
+.brands a i {
+    color: #55af31d0;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.brands a i:hover {
+    color: yellowgreen;
+}
+
+.footer-container p {
+    text-align: center;
+}
+
+#email {
+    border: solid 3px gray;
+    border-radius: 20px;
+    width: 200px;
+    height: 20px;
+}
+/*Footer*/
+
+/*Slogan*/
+.slogan-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+    background-color: #124575ab;
+    width: 100%;
+    /* -webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px); */
+    /* box-shadow: 0px 0px 100px #124575; */
+}
+
+/* .slogan-bg {
+    background-image: url(./images/slogan-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+} */
+
+.slogan-content,slogan-content-2  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.slogan-content {
+}
+
+.slogan-content-2 {
+
+}
+
+#sl-2, #sl-4, #sl-7, #sl-9 {
+    color:yellowgreen;
+}
+
+.slogan-content h1, .slogan-content-2 h1 {
+    margin: 0;
+    font-size: 50px;
+    text-align: left;
+    color: white;
+    opacity: 0;
+    text-transform: uppercase;
+}
+
+.slogan-content-2 h1 {
+    text-align: right;
+}
+/*Slogan*/
+
+/*Slogan Animation*/
+@keyframes slogan-animation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#sl-1 {
+    animation-name: slogan-animation;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+#sl-2 {
+    animation-name: slogan-animation;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+#sl-3 {
+    animation-name: slogan-animation;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+#sl-4 {
+    animation-name: slogan-animation;
+    animation-duration: 1s;
+    animation-delay: 3.5s;
+    animation-fill-mode: forwards;
+}
+
+#sl-6 {
+    animation-name: slogan-animation;
+    animation-duration: 1s;
+    animation-delay: 4.5s;
+    animation-fill-mode: forwards;
+}
+
+#sl-7 {
+    animation-name: slogan-animation;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+}
+
+#sl-8 {
+    animation-name: slogan-animation;
+    animation-duration: 1s;
+    animation-delay: 6.5s;
+    animation-fill-mode: forwards;
+}
+
+#sl-9 {
+    animation-name: slogan-animation;
+    animation-duration: 1s;
+    animation-delay: 7s;
+    animation-fill-mode: forwards;
+}
+/*Slogan Animation*/
+
+
+
+/*Benefits*/
+.benefits {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.benefit-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.benefit-card p {
+    width: 250px;
+    text-wrap: wrap;
+    text-align: center;
+    margin: 0;
+    color: wheat;
+}
+
+.benefit-card h2 {
+    margin: 0;
+    color: yellowgreen;
+}
+
+.benefit-card i {
+    color: #124575;
+}
+
+/*Testimonials*/
+.card p{
+    background-color: rgb(197, 197, 197);
+    width: 300px;
+    height: 400px;
+    border: solid 5px rgb(114, 112, 112);
+    border-radius: 10px;
+}
+
+/*Plan Selection*/
+.plan-selection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.selection-card h2 {
+    color: yellowgreen;
+}
+
+.selection-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #31353d;
+    box-shadow: 0px 0px 5px #55af31d0;
+    width: 300px;
+    height: 500px;
+    transition: 0.3s;
+}
+
+.selection-card:hover {
+    box-shadow: 0px 0px 10px yellowgreen;
+}
+
+.selection-card select {
+    border-radius: 20px;
+    width: 200px;
+    font-family: 'Inter', serif;
+}
+/*Responsiveness*/
+@media screen and (max-width:600px) {
+    .slogan-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .slogan-content h1, .slogan-content-2 h1 {
+        font-size: smaller;
+    }
+
+    .benefits {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .plan-selection {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+}
+
