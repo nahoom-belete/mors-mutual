@@ -2,13 +2,10 @@ body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
     font-family: 'Inter', serif;
     background-color: #1D2026;
-    /* background-image: url(./images/trianglify-lowres.png); */
 }
 
-/*Navigation*/
 /* #login {
     background-color: #124575;
     padding: 5px;
@@ -23,6 +20,9 @@ body {
     color: yellowgreen;
     transition: 0.3s;
 } */
+
+
+/*Navigation*/
 .navbar {
     z-index: 1;
     display: flex;
@@ -58,10 +58,11 @@ body {
 
 #mmi-logo {
     max-height: 70px;
+    filter: brightness(200);
 }
 
 nav {
-    padding-right: 60px;
+    padding-right: 120px;
 }
 
 nav ul {
@@ -96,64 +97,6 @@ nav ul a:active {
 }
 /*Navigation*/
 
-/*Footer*/
-.footer-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    left: 0;
-    bottom: 0;
-    width: 100%; 
-    height: 200px;
-    background-color: #0F172A;
-    /* position: fixed; */
-    margin-top: 200px;
-}
-
-.footer-container h2 {
-    text-transform: uppercase;
-    color: yellowgreen;
-}
-
-.contact-us {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.brands {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap: 10px;
-}
-
-.brands a {
-    text-decoration: none;
-}
-
-.brands a i {
-    color: #55af31d0;
-    font-size: 30px;
-    transition: 0.3s;
-}
-
-.brands a i:hover {
-    color: yellowgreen;
-}
-
-.footer-container p {
-    text-align: center;
-}
-
-#email {
-    border: solid 3px gray;
-    border-radius: 20px;
-    width: 200px;
-    height: 20px;
-}
-/*Footer*/
-
 /*Slogan*/
 .slogan-container {
     display: flex;
@@ -164,17 +107,15 @@ nav ul a:active {
     padding-bottom: 20px;
     background-color: #124575ab;
     width: 100%;
-    /* -webkit-backdrop-filter: blur(1px);
-    backdrop-filter: blur(1px); */
-    /* box-shadow: 0px 0px 100px #124575; */
+    box-shadow: 0px 0px 5px #124575;
+    transition: 0.5s;
 }
 
-/* .slogan-bg {
-    background-image: url(./images/slogan-bg.jpg);
+.slogan-bg {
+    background-image: url(../images/slogan-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    
-} */
+}
 
 .slogan-content,slogan-content-2  {
     display: flex;
@@ -182,18 +123,11 @@ nav ul a:active {
     align-items: flex-start;
 }
 
-.slogan-content {
-}
-
-.slogan-content-2 {
-
-}
-
 #sl-2, #sl-4, #sl-7, #sl-9 {
     color:yellowgreen;
 }
 
-.slogan-content h1, .slogan-content-2 h1 {
+.slogan-container h1 {
     margin: 0;
     font-size: 50px;
     text-align: left;
@@ -241,36 +175,34 @@ nav ul a:active {
     animation-fill-mode: forwards;
 }
 
-#sl-6 {
+#sl-5 {
     animation-name: slogan-animation;
     animation-duration: 1s;
     animation-delay: 4.5s;
     animation-fill-mode: forwards;
 }
 
-#sl-7 {
+#sl-6 {
     animation-name: slogan-animation;
     animation-duration: 1s;
     animation-delay: 5s;
     animation-fill-mode: forwards;
 }
 
-#sl-8 {
+#sl-7 {
     animation-name: slogan-animation;
     animation-duration: 1s;
     animation-delay: 6.5s;
     animation-fill-mode: forwards;
 }
 
-#sl-9 {
+#sl-8 {
     animation-name: slogan-animation;
     animation-duration: 1s;
     animation-delay: 7s;
     animation-fill-mode: forwards;
 }
 /*Slogan Animation*/
-
-
 
 /*Benefits*/
 .benefits {
@@ -313,6 +245,7 @@ nav ul a:active {
 }
 
 /*Plan Selection*/
+
 .plan-selection {
     display: flex;
     flex-direction: row;
@@ -369,3 +302,62 @@ nav ul a:active {
     }
 }
 
+/*Footer*/
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    left: 0;
+    bottom: 0;
+    width: 100%; 
+    height: 200px;
+    background-color: #0F172A;
+    /* position: fixed; */
+    margin-top: 200px;
+}
+
+.footer-container h2 {
+    text-transform: uppercase;
+    color: yellowgreen;
+}
+
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.brands {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.brands a {
+    text-decoration: none;
+}
+
+.brands a i {
+    color: #55af31d0;
+    font-size: 30px;
+    transition: 0.3s;
+}
+
+.brands a i:hover {
+    color: yellowgreen;
+}
+
+.footer-container p {
+    text-align: center;
+}
+
+#email {
+    background-color: wheat;
+    box-shadow: 0px 0px 5px whitesmoke;
+    width: 200px;
+    height: 20px;
+    font-family: 'Inter', serif;
+    border-style: none;
+}
+/*Footer*/

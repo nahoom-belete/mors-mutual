@@ -29,10 +29,16 @@
         <div class="slogan-bg">
             <div class="slogan-container">
                 <div class="slogan-content">
-                    <h1 id="sl-1">With </h1><h1 id="sl-2"><strong>mors</strong></h1><h1 id="sl-3"> it's</h1><h1 id="sl-4"><strong> mutual</strong></h1>
+                    <h1 id="sl-1">With </h1>
+                    <h1 id="sl-2"><strong>mors</strong></h1>
+                    <h1 id="sl-3"> it's</h1>
+                    <h1 id="sl-4"><strong> mutual</strong></h1>
                 </div>
                 <div class="slogan-content-2">
-                    <h1 id="sl-6">We</h1><h1 id="sl-7"><strong>expect</strong></h1><h1 id="sl-8"> the</h1><h1 id="sl-9"><strong> unexpected</strong></h1>
+                    <h1 id="sl-5">We</h1>
+                    <h1 id="sl-6"><strong>expect</strong></h1>
+                    <h1 id="sl-7"> the</h1>
+                    <h1 id="sl-8"><strong> unexpected</strong></h1>
                 </div>
             </div>
         </div>
@@ -69,6 +75,7 @@
             <div class="selection-card">
                 <h2>Life Insurance</h2>
                 <select name="life-options" id="life">
+                    <option value="=none">Select a plan</option>
                     <option value="standard">Mors Standard</option>
                     <option value="standard-plus">Mors Standard plus</option>
                     <option value="premium">Mors Premium</option>
@@ -77,6 +84,7 @@
             <div class="selection-card">
                 <h2>Home Insurance</h2>
                 <select name="life-options" id="life">
+                    <option value="=none">Select a plan</option>
                     <option value="standard">Mors Standard</option>
                     <option value="standard-plus">Mors Standard plus</option>
                     <option value="premium">Mors Premium</option>
@@ -84,11 +92,14 @@
             </div>
             <div class="selection-card">
                 <h2>Vehicle Insurance</h2>
-                <select name="life-options" id="life">
-                    <option value="standard">Mors Standard</option>
-                    <option value="standard-plus">Mors Standard plus</option>
-                    <option value="premium">Mors Premium</option>
-                </select>
+                <div class="custom-select">
+                    <select name="life-options" id="life">
+                        <option value="=none">Select a plan</option>
+                        <option value="standard">Mors Standard</option>
+                        <option value="standard-plus">Mors Standard plus</option>
+                        <option value="premium">Mors Premium</option>
+                    </select>
+                </div>
             </div>
         </section>
     </main>
